@@ -15,6 +15,8 @@ namespace CybersecurityAwarenessBot
             string name = ui.AskUser("What is your name?");
             ui.BotReply($"Hello, {name}!");
             ui.SectionFooter();
+            
+            ui.Divider(); // add to check github is working correctly
         }
     }
 }
