@@ -15,4 +15,20 @@
     <None Include=".github\workflows\dotnet-ci.yml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Windows.Extensions" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Media\Bot.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="System.Windows.Extensions" Version="8.0.0" />
+	</ItemGroup>
+	
+
+
 </Project>

@@ -10,7 +10,8 @@ namespace CybersecurityAwarenessBot
             var ui = new ConsoleDisplayManager();
             var logo = new LogoArt(ui);
             logo.DisplayLogo();
-
+            var voice = new GreatingPlayer(ui);
+            voice.PlayGreeting();
 
             ui.SectionHeader("Welcome");
             ui.BotReply("Testing the typing effect and colours.");
