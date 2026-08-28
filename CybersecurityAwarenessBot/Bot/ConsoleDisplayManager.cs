@@ -3,12 +3,11 @@
     internal class ConsoleDisplayManager
     {
 
-        private const int Width = 70;
+        private const int Width = 78;
 
         // Styling for heading and dividor
         public void SectionHeader(string title)
         {
-            Console.WriteLine();
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine(new string('=', Width));
             Console.WriteLine($"  {title.ToUpper()}");
@@ -40,7 +39,7 @@
                 Console.Write(m);
                 Thread.Sleep(delayMs);
             }
-            Console.WriteLine();
+           
         }
 
         // Changes the colour of the bot responses and calls the delay method to print out console.
@@ -67,7 +66,7 @@
         public string AskUser(string message)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            Console.Write($"{message} : ");
+            Console.Write($"{message}: ");
             Console.ResetColor();
             return Console.ReadLine() ?? string.Empty;
         }
