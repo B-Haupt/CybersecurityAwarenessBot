@@ -5,11 +5,13 @@ This is a C# project that was built for my POE assignment for Programming 2A. It
 Once the project starts it greets the user with a recorded voice message, then displays ASCII art with the title "Cybersecurity Awareness Bot", then asks the user for their name and personally greets them. After that the user can ask for a password safety tip, phishing tip or safe browsing tip. You can also ask the bot how it is and what its purpose is. You can exit the program by typing `exit`, `quit`, `bye` or `end`.
 
 # Part 1 of Assignment
--**Brittany Haupt**
--**ST10500773**
--**Programming 2A**
+
+- **Name:** Brittany Haupt
+- **Student number:** ST10500773
+- **Module:** PROG6221 Programming 2A
 
 ## Project Structure
+```
 CybersecurityAwarenessBot/
 ├── CybersecurityAwarenessBot.sln
 ├── .github/workflows/
@@ -26,7 +28,7 @@ CybersecurityAwarenessBot/
 │ └── UserProfile.cs # Stores user details using automatic properties
 └── Media/
 └── Bot.wav # Recorded voice greeting
-
+```
 
 
 ## Features of Project (Part 1)
@@ -57,7 +59,7 @@ You can ask the chatbot about password safety, phishing and safe browsing. The c
 If the chatbot cannot recognise your question then it will respond with a default message asking you to rephrase your question.
 
 Example of a conversation with the chatbot:
-![Example conversation](Pictures/exampleRun.png)
+![Example conversation](CybersecurityAwarenessBot/Pictures/exampleRun.png)
 
 ## Continuous Integration
 
