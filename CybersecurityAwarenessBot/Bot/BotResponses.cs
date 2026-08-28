@@ -12,7 +12,7 @@ namespace CybersecurityAwarenessBot.Bot
         private readonly Dictionary<string, string> _responses = new()
         {
             // Key = Value
-            ["how are you"] = "I am good. Thank you for asking",
+            ["how are you"] = "I am good. Thank you for asking.",
             ["your purpose"] = "My purpose is to provide you with safety tips to help you navigate the dangers online.",
             ["what can i ask"] = "You can ask about password,phishing and browsing.",
             ["password"] = "Use a unique, long passphrase for every account and protect them all with multi-factor authentication (MFA).",
@@ -22,8 +22,8 @@ namespace CybersecurityAwarenessBot.Bot
         };
 
         // Creating a default response incase nothing matches
-        private readonly string _defaultResponse = "I didn't quite understand. Could you please rephase the question?"
-            + "\nYou can ask me about password safety,phishing or safe browsing.";
+        private readonly string _defaultResponse = "I didn't quite understand. Could you please rephrase the question?"
+            + "\nYou can ask me about password safety, phishing or safe browsing.";
 
 
         // Method to find the key word and match it to a response

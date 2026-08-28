@@ -8,10 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Media\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Include=".github\workflows\dotnet-ci.yml" />
   </ItemGroup>
 
