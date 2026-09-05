@@ -66,7 +66,7 @@ Example of a conversation with the chatbot:
 ## Continuous Integration
 
 The workflow is set up in GitHub so that every push triggers it. The workflow checks out the code, installs the .NET 8 SDK, restores dependencies and builds the solution in Release configuration.
-
+![Example conversation](CybersecurityAwarenessBot/Pictures/workFlow.png)
 
 
 ## Video Presentation
