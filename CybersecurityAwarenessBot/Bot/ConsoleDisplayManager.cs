@@ -7,7 +7,7 @@
     internal class ConsoleDisplayManager
     {
         /// <summary>
-        /// This variable determines the width od the borders and dividers. I set it so that it matches the width of the ASCII logo so the interface are in line.
+        /// This variable determines the width of the borders and dividers. I set it so that it matches the width of the ASCII logo so the interface are in line.
         /// </summary>
         private const int Width = 83;
 

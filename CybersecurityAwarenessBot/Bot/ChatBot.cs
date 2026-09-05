@@ -21,7 +21,7 @@
         /// <summary>
         /// This is a static readonly list that contains the words that the user can use to exit the program.
         /// </summary>
-        private static readonly string[] ExitInput = { "exit", "quit", "bye", "end", "good bye" };
+        private static readonly string[] ExitInput = { "exit", "quit", "bye", "end", "good bye", "goodbye" };
 
         /// <summary>
         /// This is the ChatBot Constructor that builds the classes that are need for the display manager to be passed into.
@@ -34,7 +34,7 @@
 
 
         /// <summary>
-        /// RunChatBox is a void method as it starts the chatbot. It is also the only public method so that Program.cs can have a single entry point into the program.
+        /// RunChatBot is a void method as it starts the chatbot. It is also the only public method so that Program.cs can have a single entry point into the program.
         /// </summary>
         public void RunChatBot()
         {

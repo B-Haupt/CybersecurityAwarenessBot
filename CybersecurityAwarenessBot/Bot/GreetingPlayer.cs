@@ -18,8 +18,7 @@ namespace CybersecurityAwarenessBot.Bot
         /// Constructor of Greeting Player which takes the shared display manager so any error messages are formatted the same way as the rest of the output.
         /// </summary>
         /// <param name="ui">Takes in the display manager.</param>
-        public 
-            GreetingPlayer(ConsoleDisplayManager ui)
+        public GreetingPlayer(ConsoleDisplayManager ui)
         {
             _ui = ui;
         }

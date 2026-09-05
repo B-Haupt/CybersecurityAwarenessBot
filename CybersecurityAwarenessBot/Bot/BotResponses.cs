@@ -12,7 +12,7 @@
         /// </summary>
         private readonly Dictionary<string, string> _responses = new()
         {
-            // Key = Value
+            // Key = Value (wifi and wi-fi is duplicated so that if you spell it as wi-fi you still get the safety tip)
             ["how are you"] = "I am good. Thank you for asking.",
             ["your purpose"] = "My purpose is to provide you with safety tips to help you navigate the dangers online.",
             ["what can i ask"] = "You can ask me about password, phishing and browsing." + "\nI can also offer tips about public wifi, online scams, links in emails and app permissions.",
@@ -20,6 +20,7 @@
             ["phishing"] = "Check the sender's actual email address carefully and never click links or download attachments from unexpected messages.",
             ["browsing"] = "Before entering sensitive data, always check that the website URL starts with \"https\" and has the padlock icon to ensure your connection is fully encrypted.",
             ["wifi"] = "Public Wifi networks lack strong encryption. This allows hackers to intercept your data, steal passwords, or spread malware.",
+            ["wi-fi"] = "Public Wifi networks lack strong encryption. This allows hackers to intercept your data, steal passwords, or spread malware.",
             ["scam"] = "To protect yourself from online scams, always pause, stay calm, and independently verify any unexpected messages or requests before sharing personal information or clicking links.",
             ["link"] = "Do not follow any links in emails to reach Internet banking websites. Malicious software could redirect the link to a fake site.",
             ["permission"] = "Review app permissions before installing an application. For example it doesn't make sense for a torch app to need your contacts or location."
