@@ -14,20 +14,21 @@ Once the project starts it greets the user with a recorded voice message, then d
 ```
 CybersecurityAwarenessBot/
 ├── CybersecurityAwarenessBot.sln
-├── .github/workflows/
-│ └── dotnet-ci.yml # GitHub Actions CI build workflow
+├── .github/
+│   └── workflows/
+│       └── dotnet-ci.yml             # GitHub Actions CI build workflow
 └── CybersecurityAwarenessBot/
-├── Program.cs # Entry point only
-├── Bot/
-│ ├── ChatBox.cs # Orchestrates the session and conversation loop
-│ ├── ConsoleDisplayManager.cs # Colours, borders, dividers, typing effect
-│ ├── LogoArt.cs # ASCII art title screen
-│ ├── GreetingPlayer.cs # Plays the WAV voice greeting
-│ ├── InputValidator.cs # Validates and normalises user input
-│ ├── BotResponses.cs # Keyword to response lookup
-│ └── UserProfile.cs # Stores user details using automatic properties
-└── Media/
-└── Bot.wav # Recorded voice greeting
+    ├── Program.cs                    # Entry point only
+    ├── Bot/
+    │   ├── ChatBot.cs                # Orchestrates the session and conversation loop
+    │   ├── ConsoleDisplayManager.cs  # Colours, borders, dividers, typing effect
+    │   ├── LogoArt.cs                # ASCII art title screen
+    │   ├── GreetingPlayer.cs         # Plays the WAV voice greeting
+    │   ├── InputValidator.cs         # Validates and normalises user input
+    │   ├── BotResponses.cs           # Keyword to response lookup
+    │   └── UserProfile.cs            # Stores user details using automatic properties
+    └── Media/
+        └── Bot.wav                   # Recorded voice greeting
 ```
 
 
@@ -36,7 +37,7 @@ CybersecurityAwarenessBot/
 - **Voice greeting**: when the program starts it plays a WAV file to greet the user. The WAV file is played using `System.Media.SoundPlayer`.
 - **ASCII art title**: displayed in colour when the program runs, after the voice greeting has played.
 - **Asks the user for their name**: then uses the name throughout the conversation.
-- **Keyword response system**: the bot answers questions on passwords, phishing and safe browsing.
+- **Keyword response system**: the bot answers questions on passwords, phishing, safe browsing, public wifi, online scams, links in emails and app permissions. You can also ask it how it is and what it's purpose is.
 - **Input validation**: the program handles the user entering whitespace or nothing at all, without crashing.
 - **Formatted console interface**: the interface is easy to read because of the colours, section headers and dividers, and the slow typing response from the chatbot makes it feel like you are really talking to a computer.
 - **Modular structure**: the logic is split into multiple classes to handle everything without overloading all the code into `Program.cs`.
@@ -55,6 +56,7 @@ CybersecurityAwarenessBot/
 ## Usage
 
 You can ask the chatbot about password safety, phishing and safe browsing. The chatbot will give you a safety tip for any of the topics you select. You can also ask it "How are you?", "What is your purpose?" and "What can I ask you about?". You can exit the program by typing `exit`, `quit`, `bye` or `end`.
+You can also ask the chatbot to give you safety tips regarding public WiFi, online scams, links in emails and app permissions
 
 If the chatbot cannot recognise your question then it will respond with a default message asking you to rephrase your question.
 
