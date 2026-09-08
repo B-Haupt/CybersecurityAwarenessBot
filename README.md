@@ -71,5 +71,5 @@ The workflow is set up in GitHub so that every push triggers it. The workflow ch
 
 ## Video Presentation
 
-YouTube link:
+YouTube link: https://youtu.be/G2RPUttT1ys
 
