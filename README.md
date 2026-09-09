@@ -61,11 +61,13 @@ You can also ask the chatbot to give you safety tips regarding public WiFi, onli
 If the chatbot cannot recognise your question then it will respond with a default message asking you to rephrase your question.
 
 Example of a conversation with the chatbot:
+
 ![Example conversation](CybersecurityAwarenessBot/Pictures/exampleRun.png)
 
 ## Continuous Integration
 
 The workflow is set up in GitHub so that every push triggers it. The workflow checks out the code, installs the .NET 8 SDK, restores dependencies and builds the solution in Release configuration.
+
 ![CI workflow run successful](CybersecurityAwarenessBot/Pictures/workFlow.png)
 
 
